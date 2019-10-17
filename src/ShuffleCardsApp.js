@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './Card';
+import './ShuffleCardsApp.css'
 
 function ShuffleCardsApp() {
     const [startingDeck, setStartingDeck] = useState();
@@ -36,12 +37,15 @@ function ShuffleCardsApp() {
     }
 
     return (
-        <div>
+        <div className="ShuffleCardsApp">
             <h1>Card Dealer</h1>
             <button onClick={getCard}>Get new card!</button>
-            {drawnCard.map(c => (
-                <Card key={c.id} src={c.image} alt={c.name}/>
-            ))}
+            <div className="card-area">
+                {drawnCard.map(c => (
+                    <Card key={c.id} src={c.image} alt={c.name}/>
+                ))}
+            </div>
+            
         </div>
     )
 }
