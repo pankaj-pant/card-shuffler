@@ -38,8 +38,8 @@ function ShuffleCardsApp() {
 
     return (
         <div className="ShuffleCardsApp">
-            <h1>Card Dealer</h1>
-            <button onClick={getCard}>Get new card!</button>
+            <h1 className="title">♠️Card Dealer♠️</h1>
+            <button className="button" onClick={getCard}>Get new card!</button>
             <div className="card-area">
                 {drawnCard.map(c => (
                     <Card key={c.id} src={c.image} alt={c.name}/>
