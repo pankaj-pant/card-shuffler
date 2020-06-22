@@ -2,7 +2,7 @@
 
 A simple React app which deals cards one at a time. Cards are fetched from a shuffled deck (deckofcardsapi.com)
 
-* [Live Demo](https://card-shuffler-pp.herokuapp.com/)
+* [Live Demo](https://card-dealer-5e707.web.app/)
 
 
 ## Quick start
